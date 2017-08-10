@@ -1,0 +1,455 @@
+body {
+	background-color: #474747;
+	color: #f8f8f8;
+	font-family: "Roboto", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1, h2, h3 {
+	font-family: "Patua One", sans-serif;
+	font-weight: normal;
+	color: #f8f8f8;
+}
+
+button, input, select, textarea {
+	font-family: "Roboto", sans-serif;
+	border-radius: 4px;
+}
+
+input:focus, select:focus {
+	outline: none;
+}
+
+button {
+	background: #fff;
+	color: #000;
+	border: 0px;
+	border-radius: 4px;
+}
+
+button:hover {
+	background: #fff;
+	color: #0078ff;
+	border: 0px;
+	cursor: pointer;
+}
+
+p {
+	color: #f8f8f8;
+	font-weight: lighter;
+}
+
+a {
+	text-decoration: none;
+	color: #bbe5ff;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.container {
+	width: 980px;
+	background-color: transparent;
+	margin: 0px auto;
+}
+
+#voted {
+	display: none;
+}
+
+/* HEADER */
+
+#header {
+	background-color: #333;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px dotted #999;
+	padding: 20px 0;
+}
+
+#header h1 {
+	margin: 0;
+}
+
+#header p {
+	font-size: 14px;
+	margin: 0;
+}
+
+#header ul {
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+#header ul li {
+	display: inline-block;
+	text-indent: 0;
+}
+
+#header ul li a {
+	margin-right: 10px;
+}
+
+.content {
+	min-height: 500px;
+}
+
+/* FOOTER */
+
+#footer {
+	background-color: #333;
+	width: 100%;
+	height: 200px;
+	padding: 20px 0;
+	border-top: 1px dotted #999;
+}
+
+#footer .container {
+	background-color: transparent;
+	font-weight: lighter;
+}
+
+#footer p {
+	width: 80%;
+	margin: 0px auto;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 14px;
+	
+}
+
+#footer hr {
+	width: 80%;
+	border-bottom: 1px dotted #999;
+	border-top:0;
+}
+
+/* ADD ENTRY FORM */
+
+#addentry {
+	width: 520px;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+}
+
+.formfield {
+	display: block;
+	padding: 10px 0;
+}
+
+.formfield label {
+	display: block;
+	font-size: 16px;
+	font-weight: lighter;
+	padding: 10px 0;
+	float: left;
+	width: 100px;
+}
+
+.formfield input, .formfield textarea, .formfield select {
+	width: 400px;
+	padding: 10px;
+	font-size: 16px;
+	border: 0px;
+	font-weight: lighter;
+	font-family: "Roboto", sans-serif;
+	border-radius: 4px;
+}
+
+.formfield select {
+	margin-top: 6px;
+	width: auto;
+}
+
+.formfield textarea {
+	height: 100px;
+	max-height: 100px;
+	max-width: 400px;
+}
+
+#submit {
+	width: 150px;
+	border: 0px;
+	float: right;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 20px;
+	background: linear-gradient(to top, #0078ff 0%, #4397f6 100%);
+	color: #fff;
+	border-radius: 4px;
+}
+
+#help {
+	width: 380px;
+	margin: 20px;
+	height: 350px;
+	border-left: 1px dotted #999;
+	display: inline;
+	float: right;
+	font-weight: lighter;
+	padding-left: 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+#help h1 {
+	font-weight: lighter;
+	font-size: 60px;
+	margin: 20px 0 0 0;
+	color: #c8c8c8;
+}
+
+#help h2 {
+	font-weight: lighter;
+	font-size: 20px;
+	margin-top: 40px;
+	line-height: 1.2em;
+}
+
+#help .errors {
+	font-size: 20px;
+	display: block;
+	line-height: 1.2em;
+	bottom: 0;
+	position: absolute;
+	color: #ff5555;
+}
+
+/* MAIN PAGE LINK DISPLAY */
+
+.item {
+	width: 100%;
+	display: block;
+	border-bottom: 1px dotted #999;
+	overflow: hidden;
+	padding: 30px 0;
+}
+
+.link {
+	color: #666;
+	font-weight: lighter;
+	overflow: hidden;
+	display: inline-block;
+	width: 65%;
+}
+
+.category button {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	position: absolute;
+}
+
+.category button:hover {
+	opacity: 0.8;
+}
+
+.category button:active {
+	border: 0px;
+}
+
+.link h1 {
+	margin: 0 0 0 130px;
+	font-weight: lighter;
+	font-size: 24px;
+}
+
+.link p {
+	margin: 10px 0 0 130px;
+}
+
+.linkinfo {
+	float: right;
+	text-align: left;
+	width: 30%;
+	margin-top: -15px;
+}
+
+.date, .tags, .rating, .rate {
+	display: block;
+	margin: 10px 0;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.rate form {
+	display: inline-block;
+}
+
+.tagbutton {
+	display: inline-block;
+}
+
+.tagbutton button {
+	background-color: #e3e9ff;
+	color: #333;
+	border: none;
+	margin: 2px;
+}
+
+/* SEARCH FORMS */
+
+#search, #advanced-search {
+	background-color: transparent;
+	overflow: hidden;
+}
+
+#search {
+	border-bottom: 1px dotted #999;
+}
+	
+#searchform, #advsearchform {
+	margin: 14px;
+}
+
+#searchform #keyword {
+	width: 200px;
+	padding: 10px;
+	font-size: 16px;
+	border: 0px;
+	font-weight: lighter;
+	display: inline-block;
+}
+
+.search-hidden {
+	display: none;
+	margin: 20px 0;
+}
+
+.searchformfield {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: lighter;
+}
+
+#rating, #category, #restrict {
+	display: inline-block;
+}
+
+#category, #rating {
+	margin-right: 20px;
+}
+
+
+#searchbutton {
+	display: inline-block;
+	width: 80px;
+	border: 0px;
+	padding: 10px;
+	font-size: 16px;
+	background: linear-gradient(to top, #0078ff 0%, #4397f6 100%);
+	color: #fff;
+	border-radius: 4px;
+}
+
+#search-message h3 {
+	margin-bottom: 0px;
+}
+
+#search-message p {
+	margin-top: 0;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+#toggle-options {
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+/* Advanced Search Form */
+
+#advanced-search h3, #advanced-search p {
+	margin-left: 14px;
+}
+
+#advsearchform {
+	padding: 20px 0;
+	border-top: 1px dotted #999;
+}
+
+.searchformfield {
+	display: block;
+	border: 0px solid #000;
+	overflow: hidden;
+}
+
+.searchformfield label {
+	font-size: 16px;
+	font-weight: lighter;
+	padding: 10px 0;
+	width: 200px;
+}
+
+.searchformfield .keyword {
+	width: 400px;
+	padding: 10px;
+	font-size: 16px;
+	border: 0px;
+	font-weight: lighter;
+	margin: 10px 0;
+}
+
+.form-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+#left-col {
+	float: left;
+	width: 474px;
+	border: 0px solid #000;
+}
+
+#right-col {
+	float: right;
+	width: 474px;
+	border: 0px solid #000;
+}
+
+#taglist {
+	display: block;
+	width: 90%;
+	border: 0px solid #000;
+	line-height: 1.4em;
+	margin-bottom: 10px;
+}
+
+#taglist label {
+	padding: 0px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+.searchtag {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+#advsearchform #searchbutton {
+	width: 300px;
+}
+
+/* SORT FORM */
+
+#sort {
+	float: right;
+	margin: 14px;
+}
+
+.sortbutton {
+	display: inline-block;
+	border: 0px;
+	padding: 10px;
+	font-size: 16px;
+	background: linear-gradient(to top, #0078ff 0%, #4397f6 100%);
+	color: #fff;
+	border-radius: 4px;
+}
